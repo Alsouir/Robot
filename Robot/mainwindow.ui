@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>630</width>
+    <height>371</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>401</x>
+      <y>243</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 10px;
+	background-color:rgb(249, 220, 255) ;
+    color: rgb(0, 0, 0);
+	font: 500 19px &quot;Calibri&quot;;
+	border: 3px solid rgb(247, 201, 248);
+}</string>
+    </property>
+    <property name="text">
+     <string>Calculation coordinates</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>391</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>* π == pi, pi/2; 0.75*pi; -3*pi/2; 0.55 - вводится без пробелов</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>300</y>
+      <width>211</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 10px;
+	background-color:rgb(249, 220, 255) ;
+    color: rgb(0, 0, 0);
+	font: 400 13px &quot;Calibri&quot;;
+	border: 3px solid rgb(247, 201, 248);
+}</string>
+    </property>
+    <property name="text">
+     <string>Clear table</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>581</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="Kinematics">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Kinematics</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="theta_deg">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>theta(deg)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="a_m">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>a(m)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>d(m)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="alpha_rad">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>alpha(rad)*</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="Joint0">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Joint 0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="theta0">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="a0">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="d0">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLineEdit" name="alpha0">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="Joint0_2">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Joint 1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="theta1">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="a1">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="d1">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLineEdit" name="alpha1">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="Joint0_3">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Joint 2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="theta2">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="a2">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLineEdit" name="d2">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLineEdit" name="alpha2">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="Joint0_4">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Joint 3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="theta3">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLineEdit" name="a3">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLineEdit" name="d3">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QLineEdit" name="alpha3">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="Joint0_5">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Joint 4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="theta4">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="a4">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLineEdit" name="d4">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="QLineEdit" name="alpha4">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="Joint0_6">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Joint 5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="theta5">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLineEdit" name="a5">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLineEdit" name="d5">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="QLineEdit" name="alpha5">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>240</y>
+      <width>361</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="2" column="0">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+	background-color:rgb(255, 255, 255) ;
+	border: 2px outset rgb(126, 126, 126);
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /*border-radius: 5px;*/
+	background-color:rgb(201, 230, 255) ;
+    color: rgb(0, 0, 0);
+	font: 700 15px &quot;Calibri&quot;;
+	border: 3px solid rgb(140, 205, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Coordinates</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>630</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Calculation coordinates</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
